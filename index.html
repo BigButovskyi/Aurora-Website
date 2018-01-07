@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet/less" type="text/less" href="css/main.less"/>
-    <link rel="stylesheet/less" type="text/less" href="css/carousel.less"/>
+    <link rel="stylesheet/less" type="text/less" href="css/down-arrow.less"/>
     <script src="./libraries/less.js"></script>
 </head>
 <body>
@@ -33,50 +33,42 @@
         </ul>
     </div>
 </div>
+
 <div class="main">
-    <div id="carousel">
-        <div id="viewport">
-            <div class='prev-next' id="leftSlider">
-                <div id="prev">
-                    <img src="images/arrow.svg" class="arrow"/>
-                </div>
+    <div class="carousel"></div>
+    <div id="arrow">
+        <div class="arrows"></div>
+    </div>
+    <div id="muprodovim">
+        <h3><div id="header">МЫ ПРОВОДИМ</div></h3>
+        <div id="types">
+            <div id="types-2">
+                <div class="square" id="marriages"></div>
+                <div class="square" id="office-parties"></div>
+                <div class="square" id="birthdays"></div>
+                <div class="square" id="homecoming"></div>
             </div>
-
-            <ul id="slidewrapper">
-                <li class="slide">
-                    <img src="images/image1.jpg" alt="1" class="slide-img"/>
-                </li>
-                <li class="slide">
-                    <img src="images/image2.jpg" alt="2" class="slide-img"/>
-                </li>
-                <li class="slide">
-                    <img src="images/image3.jpg" alt="3" class="slide-img"/>
-                </li>
-                <li class="slide">
-                    <img src="images/image4.jpg" alt="3" class="slide-img"/>
-                </li>
-            </ul>
-
-            <div class='prev-next' id="rightSlider">
-                <div id="next">
-                    <img src="images/arrow.svg" class="arrow"/>
-                </div>
-            </div>
-
-            <ul id="nav-btns">
-                <li class="slide-nav-btn"></li>
-                <li class="slide-nav-btn"></li>
-                <li class="slide-nav-btn"></li>
-                <li class="slide-nav-btn"></li>
-            </ul>
+        </div>
+        <div id="footer">
+            <h4>
+                У нас индивидуальный подход к каждому заказчику<br>
+                Составим оригинальную прогамму для Вашего праздника
+            </h4>
         </div>
     </div>
+    <div id="actors">
+        <div id="actors-2">
+            <div id="actors-label"></div>
+            <div id="actors-photos"></div>
+        </div>
+    </div>
+
 </div>
+
 
 <div class="footer"></div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="js/carousel.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>
