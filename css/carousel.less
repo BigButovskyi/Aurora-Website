@@ -1,6 +1,6 @@
 #carousel {
-  width: 80%;
-  margin-left: 10%;
+  width: 100%;
+  height: 378.39px;
 
   #viewport {
     width: 100%;
@@ -17,14 +17,11 @@
       z-index: 1;
 
       #prev{
-        opacity: 0.5;
-        margin-top: 500%;
+        margin-top: 0%;
 
       }
 
       #next{
-        opacity: 0.5;
-        margin-top: 500%;
         transform: rotate(180deg);
       }
       .arrow{
@@ -34,13 +31,15 @@
 
     #leftSlider {
       left: 0;
+      opacity: 0.5;
     }
     #rightSlider {
+      z-index: 2;
       right: 0;
+      opacity: 0.5;
     }
 
     #slidewrapper {
-      background-color: orange;
       z-index: 0;
       position: relative;
       width: 400%;
@@ -54,29 +53,28 @@
         width: 25%;
         display: inline;
         float: left;
+        height: 100%;
+        overflow: auto;
 
         .slide-img {
-          width: 100%;
         }
       }
     }
 
     #nav-btns {
-      position: absolute;
       width: 100%;
-      bottom: 20px;
       padding: 0;
       margin: 0;
-      text-align: center;
+      margin-left: 10%;
     }
 
     .slide-nav-btn {
       position: relative;
       display: inline-block;
       list-style: none;
-      width: 20px;
-      height: 20px;
-      background-color: #fff;
+      width: 15px;
+      height: 15px;
+      background-color: #ff3bae;
       border-radius: 50%;
       margin: 3px;
     }

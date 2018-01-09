@@ -48,13 +48,13 @@ $(document).ready(function () {
     });
 
     $('#leftSlider').hover(function () {
-       $(this).css('opacity','1');
+       $(this).css('opacity','0.8');
     },function () {
         $(this).css('opacity','0.5');
     });
 
     $('#rightSlider').hover(function () {
-        $(this).css('opacity','1');
+        $(this).css('opacity','0.8');
     },function () {
         $(this).css('opacity','0.5');
     });

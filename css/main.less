@@ -83,13 +83,154 @@ body {
     }
   }
 
-  #actors{
+  #actors {
     width: 100%;
 
-    #actors-2{
-      margin-left: 5%;
-      width: 90%;
-      background-color: green;
+    #actors-2 {
+      margin-left: 10%;
+      width: 80%;
+      max-height: 450px;
+
+      #actors-label{
+        width: 50%;
+        height: 100%;
+        display: inline-block;
+        float: left;
+        position: relative;
+        #Artisti{
+          text-align: center;
+        }
+        #textik{
+          padding-right: 5%;
+
+        }
+        #details-button{
+          position: absolute;
+          width: 60%;
+          height: 10%;
+          background-color: #ff3bae;
+          margin-left: 15%;
+        }
+      }
+      #actors-photos{
+        width: 50%;
+        height: 100%;
+        display: inline-block;
+
+        #photochki{
+          margin-left: 5%;
+          width: 90%;
+          height: 90%;
+          max-height: 400px;
+          box-shadow: 20px 20px 10px grey;
+
+          .photochki{
+            transition: 0.5s ease;
+            box-shadow: 0px 0px 100px inset;
+          }
+
+          .photochki:hover{
+            transition: 0.5s ease;
+            box-shadow: none;
+          }
+
+          #left-photochki{
+            width: 50%;
+            height: 100%;
+            float: left;
+            display: inline-block;
+
+            #photochka-1{
+              background-image: url("../images/image2.jpg");
+              background-repeat: no-repeat;
+              background-position: center;
+              background-size: cover;
+              width: 100%;
+              height: 50%;
+            }
+
+            #photochka-2{
+              background-image: url("../images/image1.jpg");
+              background-repeat: no-repeat;
+              background-position: center;
+              background-size: cover;
+              width: 100%;
+              height: 50%;
+            }
+          }
+
+          #right-photochki{
+            display: inline-block;
+            width: 50%;
+            height: 100%;
+            background-image: url("../images/image3.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+          }
+        }
+      }
+    }
+  }
+
+  #special-offer{
+    position: relative;
+    width: 100%;
+    height: 450px;
+
+    #front-square{
+      top: 10%;
+      position: absolute;
+      z-index: 1;
+      height: 80%;
+      width: 100%;
+
+      #offer-image{
+        position: relative;
+        display: inline-block;
+        right: 10%;
+        width: 50%;
+        float: left;
+        height: 100%;
+        background-image: url("../images/image4.jpg");
+        background-repeat: no-repeat;
+        background-position: right;
+        background-size: cover;
+        background-attachment: fixed;
+
+        #image-label{
+          position: absolute;
+          margin-left: 50%;
+          right: 0;
+          bottom: 10%;
+          color: white;
+        }
+      }
+      #list-of-offers{
+       display: inline-block;
+        width: 50%;
+        height: 100%;
+
+        #offers-heading{
+          width: 80%;
+          height: 10%;
+          padding-left: 20%;
+        }
+        #offers-list{
+          width: 100%;
+          height: 90%;
+          background-color: yellow;
+        }
+      }
+    }
+    #back-square{
+      position: absolute;
+      top: 0;
+      z-index: 0;
+      right: 0;
+      width: 70%;
+      height: 100%;
+      background-color: lightgoldenrodyellow;
     }
   }
 }

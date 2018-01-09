@@ -1,5 +1,8 @@
 $('#actors-2').css('height', '100px');
 
+
+
+
 $(document).ready(function () {
     $(window).scroll(function () {
 
@@ -15,10 +18,13 @@ $(document).ready(function () {
         let square_bottom = $('#footer').position().top + $('#footer').outerHeight();
         let window_bottom = $(window).scrollTop() + $(window).height();
 
-        if (window_bottom > square_bottom && $('#homecoming').css('opacity') > '0.5') {
-            console.log($('#homecoming').css('opacity'));
+        if (window_bottom > square_bottom) {
             $('#footer').css('animation',"fadeInDown 1s ease both");
         }
 
     });
+
+    let height = $('#actors-2').width() / 2;
+    $('#actors-2').css('height', height);
+
 });
