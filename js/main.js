@@ -1,9 +1,17 @@
+let gallaryImages = ['images/image1.jpg', 'images/image1.jpg', 'images/image1.jpg', 'images/image1.jpg', 'images/image1.jpg'];
+
 $('#actors-2').css('height', '100px');
 
+let string = '';
+gallaryImages.forEach(function (item) {
+    string += '<div class="back-photka" style="background-image: url(' + item + ')"></div>';
+});
 
+$('#photos').html(string);
 
 
 $(document).ready(function () {
+
     $(window).scroll(function () {
 
         $('.square').each(function () {

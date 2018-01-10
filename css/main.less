@@ -108,8 +108,67 @@ body {
           position: absolute;
           width: 60%;
           height: 10%;
-          background-color: #ff3bae;
           margin-left: 15%;
+
+          #detail-butt{
+            border: solid #ff5900;
+            border-width: 2px 0px 2px 2px;
+            display: inline-block;
+            float: left;
+            width: 76%;
+            height: 100%;
+            font-family: Roboto;
+            line-height: 230%;
+            font-size: 120%;
+            font-weight: bold;
+            text-align: center;
+            background-color: white;
+          }
+
+          #arrow-butt{
+            border: solid #ff5900;
+            border-width: 2px;
+            display: inline-block;
+            width: 20%;
+            height: 100%;
+            background-color: #ff5900;
+
+            #i{
+              border: solid white;
+              border-width: 0 3px 3px 0;
+              display: inline-block;
+              padding: 3px;
+            }
+
+            .right {
+              height: 20px;
+              width: 20px;
+              margin-top: 10%;
+              margin-left: 20%;
+              transform: rotate(-45deg);
+              -webkit-transform: rotate(-45deg);
+            }
+
+          }
+        }
+        #details-button:hover{
+          #detail-butt{
+            transition: 0.2s ease;
+            background: #ff5900;
+            color: white;
+          }
+          #arrow-butt{
+            transition: 0.3s ease;
+            background-color: white;
+            border: solid white;
+            border-width: 2px;
+            #i{
+              border: solid #ff5900;
+              border-width: 0 3px 3px 0;
+              display: inline-block;
+              padding: 3px;
+            }
+          }
         }
       }
       #actors-photos{
@@ -122,15 +181,19 @@ body {
           width: 90%;
           height: 90%;
           max-height: 400px;
-          box-shadow: 20px 20px 10px grey;
+          box-shadow: 5px 5px 10px grey;
 
           .photochki{
-            transition: 0.5s ease;
+            z-index: 0;
+            transition: 0.2s ease;
             box-shadow: 0px 0px 100px inset;
           }
 
           .photochki:hover{
+            z-index: 1;
+            overflow: hidden;
             transition: 0.5s ease;
+            transform: scale(1.2) translateX(-15px);
             box-shadow: none;
           }
 
@@ -219,7 +282,36 @@ body {
         #offers-list{
           width: 100%;
           height: 90%;
-          background-color: yellow;
+          #offers-list-2{
+            margin-right: 20%;
+
+            ul {
+              list-style: none;
+              padding: 0;
+              margin: 0;
+            }
+
+            li {
+              font-size: 18px;
+              line-height: 18px;
+              position: relative;
+            }
+
+            li::before {
+              color: #013a7a;
+              /* UTF-8 escape sequence, соответствующая символу "Маркер списка" */
+              content:"\2022";
+              /* Делаем больше, чем основной текст в li */
+              font-size: 150%;
+              font-weight: 700;
+              /* Элемент вырван из потока, выравниваем отрицательным отступом */
+              left: -15px;
+              /* Высота строки и позиционирование необходимы для выравнивания по вертикали */
+              line-height: 20px;
+              position: absolute;
+              top: 0;
+            }
+          }
         }
       }
     }
@@ -230,7 +322,34 @@ body {
       right: 0;
       width: 70%;
       height: 100%;
-      background-color: lightgoldenrodyellow;
+      background-color: #ffe151;
+      opacity: 0.41;
+    }
+  }
+
+  #gallery{
+    height: 500px;
+    margin-top: 5%;
+    margin-left: 15%;
+    margin-right: 15%;
+
+    #gallery-label{
+      text-align: center;
+    }
+
+    #photos{
+      background-color: yellow;
+      width: 100%;
+      height: 90%;
+
+      .back-photka{
+        width: 25%;
+        height: 30%;
+        float: left;
+        display: inline-block;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
     }
   }
 }
