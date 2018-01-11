@@ -115,14 +115,16 @@ body {
             border-width: 2px 0px 2px 2px;
             display: inline-block;
             float: left;
+
             width: 76%;
             height: 100%;
             font-family: Roboto;
-            line-height: 230%;
             font-size: 120%;
             font-weight: bold;
-            text-align: center;
             background-color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
           }
 
           #arrow-butt{
@@ -349,6 +351,65 @@ body {
         display: inline-block;
         background-repeat: no-repeat;
         background-size: cover;
+      }
+    }
+  }
+
+  #prices{
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background-image: url("../images/image4.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+
+    #price{
+      position: absolute;
+      top: 10%;
+      left: 20%;
+      width: 60%;
+      height: 60%;
+
+      .price-label{
+        font-family: Ubuntu;
+        color: white;
+        letter-spacing: 2px;
+        text-align: center;
+
+
+      }
+
+      #higher-square{
+        width: 100%;
+        height: 35%;
+        border: solid white;
+        border-width: 2px;
+        box-sizing: border-box;
+        font-family: Roboto;
+        font-size: 110%;
+        color: white;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      #bottom-square{
+        width: 100%;
+        height: 40%;
+        border: solid white;
+        border-width: 2px;
+        box-sizing: border-box;
+        font-family: Roboto;
+        font-size: 120%;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-flow: column;
+        line-height: 150%;
       }
     }
   }
